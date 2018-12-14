@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Postavi pitanje</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="okruzivac">
+            <h2>Da li zelite da nam postavite pitanje?</h2>
+            <form action="MAILTO:example@example.com" method="POST" enctype="text/plain">
+                <div>
+                    <label class="go-left">*Ime i prezime:</label>
+                    <input type='text' name='username' placeholder="Vase ime" required>
+                </div> 
+                <div>
+                    <label class="go-left">*Imejl:</label>
+                    <input type="email" name="email"  placeholder="example@example.com" required>
+                </div> 
+                <div>
+                    <label class="go-left">*Lozinka:</label>
+                    <input type="password" name="password" required>
+                </div>
+                <div>
+                    <label class="go-left">Godina rodenja:</label>
+                    <input type="number" min="1950">
+                </div> 
+                <div>
+                    <label class="go-left">Pol:</label>
+                    <label>muski</label>
+                    <input type="radio" name="sex" value="male">
+                    <label>zenski</label>
+                    <input type="radio" name="sex" value="female">
+                </div> 
+                <div>
+                    <label class="go-left" id="tema">Tema pitanja:</label>
+                    <div>
+                        <input type="checkbox" name="tema" value="infoIgre">
+                        <label>informacije o igrama</label>
+                        <br>
+                        <input type="checkbox" name="tema" value="infoProizvodac">
+                        <label>informacije o proizvodacima</label>
+                        <br>
+                        <input type="checkbox" name="tema" value="kupovina">
+                        <label>kupovina igara</label>
+                        <br>
+                        <input type="checkbox" name="tema" value="kontakt">
+                        <label>kontakt</label>
+                    </div>
+                </div>
+                <div>
+                    <label class="go-left">*Poruka:</label>
+                    <textarea rows="10" cols="30" placeholder="Ovde upisite svoju poruku." required></textarea>
+                </div>
+                <div>
+                    <label class="go-left">Da li zelite da nam posaljete fajl?</label>
+                    <input type="file" name="fajl">
+                </div>
+                <div>
+                    <label class="go-left">Kada zelite da dobijete odgovor?</label>
+                    <select name="hitnost">
+                        <option value="none"selected></option>
+                        <optgroup label="Velika hitnost">
+                            <option value="velika">u toku dana</option>
+                            <option value="velika">sutra</option>
+                        </optgroup>
+                        <optgroup label="Srednja hitnost">
+                            <option value="srednja">za dva-tri dana</option>
+                            <option value="srednja">ove sedmice</option>
+                        </optgroup>
+                        <optgroup label="Mala hitnost">
+                            <option value="mala">ove ili naredne semdice</option>
+                            <option value="mala">ovog meseca</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div>
+                    <input type="button" value="Hvala!" onclick="alert('Hvala sto koristite nas sajt!')">
+                    <button onclick="alert('NEEEEEEEEEE!')">Ovo je isto kao submit!</button>
+                </div>
+                <div>
+                    <input type="reset" value="Ponisti">
+                    <input type="submit" value="Posalji poruku">
+                </div> 
+            </form>
+            <div id="vratiSe">
+                <p>Vrati se na <a href='vezba2.html'>sajt</a>.</p>
+            </div>
+        </div>
+    </body>
+</html>

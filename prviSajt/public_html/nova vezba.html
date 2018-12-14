@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Vezba 2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            html {
+                background-image: url(Slike/1x2000-ffff007f.png);
+                background-repeat: repeat-x, repeat-y;
+            }
+            img {
+                width:500px;
+            }
+            p {
+                float:right;
+                font-size: 30px;
+                width: 200px;
+                position: relative;
+                top: 3em;
+                text-align: center;
+            }
+            table, table th, table td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            table {
+                margin: 10em;
+                text-align: center;
+            }
+            #wrapper {
+                width: 720px;
+                margin: auto;
+            }
+            #saVeba {
+                width:720px;
+                padding:20px;
+                background-color:lightgreen;
+                border:1px dotted green;
+                margin-bottom: 20px
+            }
+            #saVeba img {
+                border:3px solid green;
+            }
+            #saVeba p {
+                color: green;
+            }
+            #izFoldera {
+                width:720px;
+                padding:20px;
+                background-color:lightblue;
+                border:1px dotted blue;
+            }
+            #izFoldera img {
+                border:3px solid blue;
+            }
+            #izFoldera p {
+                color: blue;
+            }
+            .moreBottom {
+                margin-bottom:20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="saVeba">
+                <h3>Slika sa veba</h3>
+
+                <div>
+                    <img src="https://cdn.pixabay.com/photo/2016/06/18/17/42/image-1465348_960_720.jpg" alt="Statua deteta" title="Statua deteta u prirodi" usemap="#statuaDeteta">
+                    <map name="statuaDeteta">
+                        <area shape="rect" coords="187,50,307,300" title="Statua deteta" alt="Statua deteta" href="https://pixabay.com/en/image-statue-brass-child-art-1465348/" target="_blank">
+                    </map>
+                    <p>Statua deteta u prirodi</p>
+                </div>
+            </div>
+            <div id="izFoldera">
+                <h3>Slike iz foldera</h3>
+
+                <div>
+                    <img src="Slike/Aurora.jpg" alt="Aurora Borealis" class="moreBottom">
+                    <p>Aurora Borealis</p>
+                </div>
+
+                <div>
+                    <img src="Slike/Flamingo.jpg" alt="Flamingo" class="moreBottom">
+                    <p>Flamingo</p>
+                </div>
+
+                <div>
+                    <img src="Slike/Pticice.jpg" alt="Pticice" >
+                    <p>Pticice</p>
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Redni broj</th>
+                        <th>Primitivni tip</th>
+                        <th>Komentar</th>
+                    </tr>
+                </thead>
+
+                <tfoot>
+
+                <td colspan="3">
+                    8 primitivnih tipova podataka u Javi
+                </td>
+
+                </tfoot>
+
+                <tbody>
+                    <tr>
+                        <th rowspan="2">1</th>
+                        <td rowspan="2">boolean</td>
+                        <td>true</td>
+                    <tr>
+                        <td>false</td>
+                    </tr>
+                    </tr>
+
+                    <tr>
+                        <th>2</th>
+                        <td>char</td>
+                        <td>'a'</td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>byte</td>
+                        <td>8 bit</td>
+                    </tr>
+                    <tr>
+                        <th>4</th>
+                        <td>short</td>
+                        <td>16 bit</td>
+                    </tr>
+                    <tr>
+                        <th>5</th>
+                        <td>int</td>
+                        <td>32 bit</td>
+                    </tr>
+                    <tr>
+                        <th>6</th>
+                        <td>long</td>
+                        <td>64 bit</td>
+                    </tr>
+                    <tr>
+                        <th>7</th>
+                        <td>float</td>
+                        <td>32 bit (0.0)</td>
+                    </tr>
+                    <tr>
+                        <th>8</th>
+                        <td>double</td>
+                        <td>64 bit (0.0)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

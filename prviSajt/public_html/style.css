@@ -1,0 +1,102 @@
+html {
+    background-image: url(Slike/Background.jpg);
+    background-position: center; 
+}
+#wrapper {
+    width: 1000px;
+    margin: 0 auto;
+}
+#header {
+    background-color: rgba(88, 36, 104, 0.1);
+}
+#header h1 {
+    color: #582468;
+}
+#nav {
+    float: right;
+}
+#nav ul {
+    font-size: 1em;
+}
+#main {
+    width: 800px;
+}
+#mainRight{
+    float: right;
+}
+h3 {
+    margin-right: 420px;
+    background-color: #D0EAF3;
+    border: 2px dotted blue;
+    color: #0000ff;
+}
+#main ul, #main ol, #main dl {
+    margin-right: 420px;
+    background-color: #F0D3B6;
+    border: 2px dotted red;
+    color: #ff0000;
+}
+#main li a {
+    color: #ff0000;
+}
+span {
+    font-size: 150%;
+    font-style: italic;
+}
+#poruka {
+    padding: 10px;
+    border: 0.5px solid #ffffff;
+}
+#poruka p a {
+    color: #000000;
+}
+#footer {
+    background-color: #582468;
+    height: 50px;
+}
+#footer p {
+    text-align: center;
+    padding-top: 15px;
+}
+
+/*za formu*/
+
+h2 {
+    padding-left:1em;
+}
+
+input, button, select {
+    border: none;
+    padding-left: 5px;
+    height:2em;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-top: 2px;
+    vertical-align: middle;
+}
+
+textarea {
+    border: none;
+    padding-left: 5px;
+}
+
+#okruzivac {
+    width: 470px;
+    margin: 0 auto;
+}
+form div{
+    margin: 20px 10px;
+}
+.go-left {
+    float:left;
+    width: 11em;
+}
+#tema {
+    height: 16vh;
+}
+#vratiSe {
+    margin: 50px 0px;
+    text-indent: 50px;
+}
+
